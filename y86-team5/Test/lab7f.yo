@@ -1,0 +1,25 @@
+                            |  
+                            |      /* This input file tests the OPQ instructions. */ 
+0x000: 30f00300000000000000 |      irmovq  3, %rax
+0x00a: 30f10400000000000000 |      irmovq  4, %rcx
+0x014: 30f20500000000000000 |      irmovq  5, %rdx
+0x01e: 30f30600000000000000 |      irmovq  6, %rbx
+0x028: 30f60700000000000000 |      irmovq  7, %rsi
+0x032: 30f40800000000000000 |      irmovq  8, %rsp
+0x03c: 30f50900000000000000 |      irmovq  9, %rbp
+0x046: 30f70a00000000000000 |      irmovq 10, %rdi
+0x050: 6001                 |      addq %rax, %rcx                # %rcx is 7, ZF = 0, SF = 0, OF = 0
+0x052: 6102                 |      subq %rax, %rdx                # %rdx is 2, ZF = 0, SF = 0, OF = 0
+0x054: 10                   |      nop
+0x055: 6203                 |      andq %rax, %rbx                # %rbx is 2, ZF = 0, SF = 0, OF = 0
+0x057: 6306                 |      xorq %rax, %rsi                # %rsi is 4, ZF = 0, SF = 0, OF = 0
+0x059: 10                   |      nop
+0x05a: 6014                 |      addq %rcx, %rsp                # %rsp is 15 (f), flags are 0
+0x05c: 6125                 |      subq %rdx, %rbp                # %rbp is 7, flags are 0 
+0x05e: 10                   |      nop
+0x05f: 00                   |      halt
+0x060: 10                   |      nop
+0x061: 10                   |      nop
+0x062: 10                   |      nop
+0x063: 10                   |      nop
+0x064: 10                   |      nop

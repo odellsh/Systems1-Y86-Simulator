@@ -1,0 +1,282 @@
+13c13
+< D: instr = irmovq, rA = ----, rB = %rax, valC = 0xfffffffffffffff0, valP = 0xa, Stat = AOK
+---
+> D: instr = irmovq, rA = ----, rB = %rax, valC = 0xffffffffffffffff, valP = 0xa, Stat = AOK
+22,23c22,23
+< D: instr = irmovq, rA = ----, rB = %rcx, valC = 0x3f1, valP = 0x14, Stat = AOK
+< E: instr = irmovq, valC = 0xfffffffffffffff0, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %rcx, valC = 0x3, valP = 0x14, Stat = AOK
+> E: instr = irmovq, valC = 0xffffffffffffffff, valA = 0x0, valB = 0x0
+31,32c31,32
+< D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x0, Stat = ADR
+< E: instr = irmovq, valC = 0x3f1, valA = 0x0, valB = 0x0
+---
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x15, Stat = AOK
+> E: instr = irmovq, valC = 0x3, valA = 0x0, valB = 0x0
+34c34
+< M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffff0, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xffffffffffffffff, valA = 0x0
+40c40
+< D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x0, Stat = ADR
+---
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x16, Stat = AOK
+42,43c42,43
+<    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = ADR
+< M: instr = irmovq, Cnd = 1, valE = 0x3f1, valA = 0x0
+---
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = AOK
+> M: instr = irmovq, Cnd = 1, valE = 0x3, valA = 0x0
+45c45
+< W: instr = irmovq, valE = 0xfffffffffffffff0, valM = 0x0, dstE = %rax, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xffffffffffffffff, valM = 0x0, dstE = %rax, dstM = ----, Stat = AOK
+51c51
+<    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = ADR
+---
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = AOK
+53,54c53,54
+<    dstE = ----, dstM = ----, Stat = ADR
+< W: instr = irmovq, valE = 0x3f1, valM = 0x0, dstE = %rcx, dstM = ----, Stat = AOK
+---
+>    dstE = ----, dstM = ----, Stat = AOK
+> W: instr = irmovq, valE = 0x3, valM = 0x0, dstE = %rcx, dstM = ----, Stat = AOK
+58,59c58,59
+< D: instr = irmovq, rA = ----, rB = %rax, valC = 0xfffffffffffffff0, valP = 0x22, Stat = AOK
+< E: instr = addq, valC = 0x0, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %rax, valC = 0xffffffffffffffff, valP = 0x22, Stat = AOK
+> E: instr = addq, valC = 0x0, valA = 0xffffffffffffffff, valB = 0x3
+62,63c62,279
+<    dstE = ----, dstM = ----, Stat = ADR
+< W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = ADR
+---
+>    dstE = ----, dstM = ----, Stat = AOK
+> W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = AOK
+> 
+> Cycle 7. CC=Z=0 S=0 O=0, Stat=AOK
+> F: predPC = 0x2c
+> D: instr = irmovq, rA = ----, rB = %rcx, valC = 0xfffffffffffffffd, valP = 0x2c, Stat = AOK
+> E: instr = irmovq, valC = 0xffffffffffffffff, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = %rax, dstM = ----, Stat = AOK
+> M: instr = addq, Cnd = 1, valE = 0x2, valA = 0xffffffffffffffff
+>    dstE = %rcx, dstM = ----, Stat = AOK
+> W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = AOK
+> 
+> Cycle 8. CC=Z=0 S=0 O=0, Stat=AOK
+> F: predPC = 0x2d
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x2d, Stat = AOK
+> E: instr = irmovq, valC = 0xfffffffffffffffd, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = %rcx, dstM = ----, Stat = AOK
+> M: instr = irmovq, Cnd = 1, valE = 0xffffffffffffffff, valA = 0x0
+>    dstE = %rax, dstM = ----, Stat = AOK
+> W: instr = addq, valE = 0x2, valM = 0x0, dstE = %rcx, dstM = ----, Stat = AOK
+> 
+> Cycle 9. CC=Z=0 S=0 O=0, Stat=AOK
+> F: predPC = 0x2e
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x2e, Stat = AOK
+> E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = AOK
+> M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffffd, valA = 0x0
+>    dstE = %rcx, dstM = ----, Stat = AOK
+> W: instr = irmovq, valE = 0xffffffffffffffff, valM = 0x0, dstE = %rax, dstM = ----, Stat = AOK
+> 
+> Cycle 10. CC=Z=0 S=0 O=0, Stat=AOK
+> F: predPC = 0x30
+> D: instr = addq, rA = %rax, rB = %rcx, valC = 0x0, valP = 0x30, Stat = AOK
+> E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = AOK
+> M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+>    dstE = ----, dstM = ----, Stat = AOK
+> W: instr = irmovq, valE = 0xfffffffffffffffd, valM = 0x0, dstE = %rcx, dstM = ----, Stat = AOK
+> 
+> Cycle 11. CC=Z=0 S=0 O=0, Stat=AOK
+> F: predPC = 0x3a
+> D: instr = irmovq, rA = ----, rB = %rax, valC = 0xffffffffffffffff, valP = 0x3a, Stat = AOK
+> E: instr = addq, valC = 0x0, valA = 0xffffffffffffffff, valB = 0xfffffffffffffffd
+>    srcA = %rax, srcB = %rcx, dstE = %rcx, dstM = ----, Stat = AOK
+> M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+>    dstE = ----, dstM = ----, Stat = AOK
+> W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = AOK
+> 
+> Cycle 12. CC=Z=0 S=1 O=0, Stat=AOK
+> F: predPC = 0x44
+> D: instr = irmovq, rA = ----, rB = %rcx, valC = 0x1, valP = 0x44, Stat = AOK
+> E: instr = irmovq, valC = 0xffffffffffffffff, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = %rax, dstM = ----, Stat = AOK
+> M: instr = addq, Cnd = 1, valE = 0xfffffffffffffffc, valA = 0xffffffffffffffff
+>    dstE = %rcx, dstM = ----, Stat = AOK
+> W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = AOK
+> 
+> Cycle 13. CC=Z=0 S=1 O=0, Stat=AOK
+> F: predPC = 0x45
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x45, Stat = AOK
+> E: instr = irmovq, valC = 0x1, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = %rcx, dstM = ----, Stat = AOK
+> M: instr = irmovq, Cnd = 1, valE = 0xffffffffffffffff, valA = 0x0
+>    dstE = %rax, dstM = ----, Stat = AOK
+> W: instr = addq, valE = 0xfffffffffffffffc, valM = 0x0, dstE = %rcx, dstM = ----, Stat = AOK
+> 
+> Cycle 14. CC=Z=0 S=1 O=0, Stat=AOK
+> F: predPC = 0x46
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x46, Stat = AOK
+> E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = AOK
+> M: instr = irmovq, Cnd = 1, valE = 0x1, valA = 0x0
+>    dstE = %rcx, dstM = ----, Stat = AOK
+> W: instr = irmovq, valE = 0xffffffffffffffff, valM = 0x0, dstE = %rax, dstM = ----, Stat = AOK
+> 
+> Cycle 15. CC=Z=0 S=1 O=0, Stat=AOK
+> F: predPC = 0x48
+> D: instr = addq, rA = %rax, rB = %rcx, valC = 0x0, valP = 0x48, Stat = AOK
+> E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = AOK
+> M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+>    dstE = ----, dstM = ----, Stat = AOK
+> W: instr = irmovq, valE = 0x1, valM = 0x0, dstE = %rcx, dstM = ----, Stat = AOK
+> 
+> Cycle 16. CC=Z=0 S=1 O=0, Stat=AOK
+> F: predPC = 0x52
+> D: instr = irmovq, rA = ----, rB = %rax, valC = 0x8000000000000000, valP = 0x52, Stat = AOK
+> E: instr = addq, valC = 0x0, valA = 0xffffffffffffffff, valB = 0x1
+>    srcA = %rax, srcB = %rcx, dstE = %rcx, dstM = ----, Stat = AOK
+> M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+>    dstE = ----, dstM = ----, Stat = AOK
+> W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = AOK
+> 
+> Cycle 17. CC=Z=1 S=0 O=0, Stat=AOK
+> F: predPC = 0x5c
+> D: instr = irmovq, rA = ----, rB = %rcx, valC = 0x8000000000000000, valP = 0x5c, Stat = AOK
+> E: instr = irmovq, valC = 0x8000000000000000, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = %rax, dstM = ----, Stat = AOK
+> M: instr = addq, Cnd = 1, valE = 0x0, valA = 0xffffffffffffffff
+>    dstE = %rcx, dstM = ----, Stat = AOK
+> W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = AOK
+> 
+> Cycle 18. CC=Z=1 S=0 O=0, Stat=AOK
+> F: predPC = 0x5d
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x5d, Stat = AOK
+> E: instr = irmovq, valC = 0x8000000000000000, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = %rcx, dstM = ----, Stat = AOK
+> M: instr = irmovq, Cnd = 1, valE = 0x8000000000000000, valA = 0x0
+>    dstE = %rax, dstM = ----, Stat = AOK
+> W: instr = addq, valE = 0x0, valM = 0x0, dstE = %rcx, dstM = ----, Stat = AOK
+> 
+> Cycle 19. CC=Z=1 S=0 O=0, Stat=AOK
+> F: predPC = 0x5e
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x5e, Stat = AOK
+> E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = AOK
+> M: instr = irmovq, Cnd = 1, valE = 0x8000000000000000, valA = 0x0
+>    dstE = %rcx, dstM = ----, Stat = AOK
+> W: instr = irmovq, valE = 0x8000000000000000, valM = 0x0, dstE = %rax, dstM = ----, Stat = AOK
+> 
+> Cycle 20. CC=Z=1 S=0 O=0, Stat=AOK
+> F: predPC = 0x60
+> D: instr = addq, rA = %rax, rB = %rcx, valC = 0x0, valP = 0x60, Stat = AOK
+> E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = AOK
+> M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+>    dstE = ----, dstM = ----, Stat = AOK
+> W: instr = irmovq, valE = 0x8000000000000000, valM = 0x0, dstE = %rcx, dstM = ----, Stat = AOK
+> 
+> Cycle 21. CC=Z=1 S=0 O=0, Stat=AOK
+> F: predPC = 0x61
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x61, Stat = AOK
+> E: instr = addq, valC = 0x0, valA = 0x8000000000000000, valB = 0x8000000000000000
+>    srcA = %rax, srcB = %rcx, dstE = %rcx, dstM = ----, Stat = AOK
+> M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+>    dstE = ----, dstM = ----, Stat = AOK
+> W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = AOK
+> 
+> Cycle 22. CC=Z=1 S=0 O=1, Stat=AOK
+> F: predPC = 0x6b
+> D: instr = irmovq, rA = ----, rB = %rax, valC = 0x7fffffffffffffff, valP = 0x6b, Stat = AOK
+> E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = AOK
+> M: instr = addq, Cnd = 1, valE = 0x0, valA = 0x8000000000000000
+>    dstE = %rcx, dstM = ----, Stat = AOK
+> W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = AOK
+> 
+> Cycle 23. CC=Z=1 S=0 O=1, Stat=AOK
+> F: predPC = 0x75
+> D: instr = irmovq, rA = ----, rB = %rcx, valC = 0x7fffffffffffffff, valP = 0x75, Stat = AOK
+> E: instr = irmovq, valC = 0x7fffffffffffffff, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = %rax, dstM = ----, Stat = AOK
+> M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+>    dstE = ----, dstM = ----, Stat = AOK
+> W: instr = addq, valE = 0x0, valM = 0x0, dstE = %rcx, dstM = ----, Stat = AOK
+> 
+> Cycle 24. CC=Z=1 S=0 O=1, Stat=AOK
+> F: predPC = 0x76
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x76, Stat = AOK
+> E: instr = irmovq, valC = 0x7fffffffffffffff, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = %rcx, dstM = ----, Stat = AOK
+> M: instr = irmovq, Cnd = 1, valE = 0x7fffffffffffffff, valA = 0x0
+>    dstE = %rax, dstM = ----, Stat = AOK
+> W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = AOK
+> 
+> Cycle 25. CC=Z=1 S=0 O=1, Stat=AOK
+> F: predPC = 0x77
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x77, Stat = AOK
+> E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = AOK
+> M: instr = irmovq, Cnd = 1, valE = 0x7fffffffffffffff, valA = 0x0
+>    dstE = %rcx, dstM = ----, Stat = AOK
+> W: instr = irmovq, valE = 0x7fffffffffffffff, valM = 0x0, dstE = %rax, dstM = ----, Stat = AOK
+> 
+> Cycle 26. CC=Z=1 S=0 O=1, Stat=AOK
+> F: predPC = 0x79
+> D: instr = addq, rA = %rax, rB = %rcx, valC = 0x0, valP = 0x79, Stat = AOK
+> E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = AOK
+> M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+>    dstE = ----, dstM = ----, Stat = AOK
+> W: instr = irmovq, valE = 0x7fffffffffffffff, valM = 0x0, dstE = %rcx, dstM = ----, Stat = AOK
+> 
+> Cycle 27. CC=Z=1 S=0 O=1, Stat=AOK
+> F: predPC = 0x7a
+> D: instr = halt, rA = ----, rB = ----, valC = 0x0, valP = 0x7a, Stat = HLT
+> E: instr = addq, valC = 0x0, valA = 0x7fffffffffffffff, valB = 0x7fffffffffffffff
+>    srcA = %rax, srcB = %rcx, dstE = %rcx, dstM = ----, Stat = AOK
+> M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+>    dstE = ----, dstM = ----, Stat = AOK
+> W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = AOK
+> 
+> Cycle 28. CC=Z=0 S=1 O=1, Stat=AOK
+> F: predPC = 0x7b
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x7b, Stat = AOK
+> E: instr = halt, valC = 0x0, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = HLT
+> M: instr = addq, Cnd = 1, valE = 0xfffffffffffffffe, valA = 0x7fffffffffffffff
+>    dstE = %rcx, dstM = ----, Stat = AOK
+> W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = AOK
+> 
+> Cycle 29. CC=Z=0 S=1 O=1, Stat=AOK
+> F: predPC = 0x7c
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x7c, Stat = AOK
+> E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = AOK
+> M: instr = halt, Cnd = 1, valE = 0x0, valA = 0x0
+>    dstE = ----, dstM = ----, Stat = HLT
+> W: instr = addq, valE = 0xfffffffffffffffe, valM = 0x0, dstE = %rcx, dstM = ----, Stat = AOK
+> 
+> Cycle 30. CC=Z=0 S=1 O=1, Stat=AOK
+> F: predPC = 0x7d
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x7d, Stat = AOK
+> E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = AOK
+> M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+>    dstE = ----, dstM = ----, Stat = AOK
+> W: instr = halt, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = HLT
+65c281
+< Status 'ADR', CC Z=1 S=0 O=0
+---
+> Status 'HLT', CC Z=0 S=1 O=1
+68,69c284,285
+< %rax:	0x0000000000000000	0xfffffffffffffff0
+< %rcx:	0x0000000000000000	0x00000000000003f1
+---
+> %rax:	0x0000000000000000	0x7fffffffffffffff
+> %rcx:	0x0000000000000000	0xfffffffffffffffe

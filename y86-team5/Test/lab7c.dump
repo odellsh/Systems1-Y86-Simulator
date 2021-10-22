@@ -1,0 +1,71 @@
+
+Cycle 0. CC=Z=1 S=0 O=0, Stat=AOK
+F: predPC = 0x0
+D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x0, Stat = BUB
+E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+   srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = BUB
+M: instr = nop, Cnd = 0, valE = 0x0, valA = 0x0
+   dstE = ----, dstM = ----, Stat = BUB
+W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = BUB
+
+Cycle 1. CC=Z=1 S=0 O=0, Stat=AOK
+F: predPC = 0xa
+D: instr = irmovq, rA = ----, rB = %rax, valC = 0xfffffffffffffff0, valP = 0xa, Stat = AOK
+E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+   srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = BUB
+M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+   dstE = ----, dstM = ----, Stat = BUB
+W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = BUB
+
+Cycle 2. CC=Z=1 S=0 O=0, Stat=AOK
+F: predPC = 0x14
+D: instr = irmovq, rA = ----, rB = %rcx, valC = 0x3f1, valP = 0x14, Stat = AOK
+E: instr = irmovq, valC = 0xfffffffffffffff0, valA = 0x0, valB = 0x0
+   srcA = ----, srcB = ----, dstE = %rax, dstM = ----, Stat = AOK
+M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+   dstE = ----, dstM = ----, Stat = BUB
+W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = BUB
+
+Cycle 3. CC=Z=1 S=0 O=0, Stat=AOK
+F: predPC = 0x15
+D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x0, Stat = ADR
+E: instr = irmovq, valC = 0x3f1, valA = 0x0, valB = 0x0
+   srcA = ----, srcB = ----, dstE = %rcx, dstM = ----, Stat = AOK
+M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffff0, valA = 0x0
+   dstE = %rax, dstM = ----, Stat = AOK
+W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = BUB
+
+Cycle 4. CC=Z=1 S=0 O=0, Stat=AOK
+F: predPC = 0x16
+D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x0, Stat = ADR
+E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+   srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = ADR
+M: instr = irmovq, Cnd = 1, valE = 0x3f1, valA = 0x0
+   dstE = %rcx, dstM = ----, Stat = AOK
+W: instr = irmovq, valE = 0xfffffffffffffff0, valM = 0x0, dstE = %rax, dstM = ----, Stat = AOK
+
+Cycle 5. CC=Z=1 S=0 O=0, Stat=AOK
+F: predPC = 0x17
+D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x0, Stat = ADR
+E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+   srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = ADR
+M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+   dstE = ----, dstM = ----, Stat = ADR
+W: instr = irmovq, valE = 0x3f1, valM = 0x0, dstE = %rcx, dstM = ----, Stat = AOK
+
+Cycle 6. CC=Z=1 S=0 O=0, Stat=AOK
+F: predPC = 0x18
+D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x0, Stat = ADR
+E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+   srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = ADR
+M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+   dstE = ----, dstM = ----, Stat = ADR
+W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = ADR
+Processor State:
+Status 'ADR', CC Z=1 S=0 O=0
+
+Changes to registers:
+%rax:	0x0000000000000000	0xfffffffffffffff0
+%rcx:	0x0000000000000000	0x00000000000003f1
+
+Changes to memory:

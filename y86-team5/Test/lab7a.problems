@@ -1,0 +1,490 @@
+13c13
+< D: instr = irmovq, rA = ----, rB = %rax, valC = 0x1f0, valP = 0xa, Stat = AOK
+---
+> D: instr = irmovq, rA = ----, rB = %rax, valC = 0x1, valP = 0xa, Stat = AOK
+22,23c22,23
+< D: instr = irmovq, rA = ----, rB = %rcx, valC = 0x2f1, valP = 0x14, Stat = AOK
+< E: instr = irmovq, valC = 0x1f0, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %rcx, valC = 0x2, valP = 0x14, Stat = AOK
+> E: instr = irmovq, valC = 0x1, valA = 0x0, valB = 0x0
+31,32c31,32
+< D: instr = irmovq, rA = ----, rB = %rdx, valC = 0x3f2, valP = 0x1e, Stat = AOK
+< E: instr = irmovq, valC = 0x2f1, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %rdx, valC = 0x3, valP = 0x1e, Stat = AOK
+> E: instr = irmovq, valC = 0x2, valA = 0x0, valB = 0x0
+34c34
+< M: instr = irmovq, Cnd = 1, valE = 0x1f0, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0x1, valA = 0x0
+40,41c40,41
+< D: instr = irmovq, rA = ----, rB = %rbx, valC = 0x4f3, valP = 0x28, Stat = AOK
+< E: instr = irmovq, valC = 0x3f2, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %rbx, valC = 0x4, valP = 0x28, Stat = AOK
+> E: instr = irmovq, valC = 0x3, valA = 0x0, valB = 0x0
+43c43
+< M: instr = irmovq, Cnd = 1, valE = 0x2f1, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0x2, valA = 0x0
+45c45
+< W: instr = irmovq, valE = 0x1f0, valM = 0x0, dstE = %rax, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0x1, valM = 0x0, dstE = %rax, dstM = ----, Stat = AOK
+49,50c49,50
+< D: instr = irmovq, rA = ----, rB = %rsp, valC = 0x5f4, valP = 0x32, Stat = AOK
+< E: instr = irmovq, valC = 0x4f3, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %rsp, valC = 0x5, valP = 0x32, Stat = AOK
+> E: instr = irmovq, valC = 0x4, valA = 0x0, valB = 0x0
+52c52
+< M: instr = irmovq, Cnd = 1, valE = 0x3f2, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0x3, valA = 0x0
+54c54
+< W: instr = irmovq, valE = 0x2f1, valM = 0x0, dstE = %rcx, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0x2, valM = 0x0, dstE = %rcx, dstM = ----, Stat = AOK
+58,59c58,59
+< D: instr = irmovq, rA = ----, rB = %rbp, valC = 0x6f5, valP = 0x3c, Stat = AOK
+< E: instr = irmovq, valC = 0x5f4, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %rbp, valC = 0x6, valP = 0x3c, Stat = AOK
+> E: instr = irmovq, valC = 0x5, valA = 0x0, valB = 0x0
+61c61
+< M: instr = irmovq, Cnd = 1, valE = 0x4f3, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0x4, valA = 0x0
+63c63
+< W: instr = irmovq, valE = 0x3f2, valM = 0x0, dstE = %rdx, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0x3, valM = 0x0, dstE = %rdx, dstM = ----, Stat = AOK
+67,68c67,68
+< D: instr = irmovq, rA = ----, rB = %rsi, valC = 0x7f6, valP = 0x46, Stat = AOK
+< E: instr = irmovq, valC = 0x6f5, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %rsi, valC = 0x7, valP = 0x46, Stat = AOK
+> E: instr = irmovq, valC = 0x6, valA = 0x0, valB = 0x0
+70c70
+< M: instr = irmovq, Cnd = 1, valE = 0x5f4, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0x5, valA = 0x0
+72c72
+< W: instr = irmovq, valE = 0x4f3, valM = 0x0, dstE = %rbx, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0x4, valM = 0x0, dstE = %rbx, dstM = ----, Stat = AOK
+76,77c76,77
+< D: instr = irmovq, rA = ----, rB = %rdi, valC = 0x8f7, valP = 0x50, Stat = AOK
+< E: instr = irmovq, valC = 0x7f6, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %rdi, valC = 0x8, valP = 0x50, Stat = AOK
+> E: instr = irmovq, valC = 0x7, valA = 0x0, valB = 0x0
+79c79
+< M: instr = irmovq, Cnd = 1, valE = 0x6f5, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0x6, valA = 0x0
+81c81
+< W: instr = irmovq, valE = 0x5f4, valM = 0x0, dstE = %rsp, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0x5, valM = 0x0, dstE = %rsp, dstM = ----, Stat = AOK
+85,86c85,86
+< D: instr = irmovq, rA = ----, rB = %r8, valC = 0x9f8, valP = 0x5a, Stat = AOK
+< E: instr = irmovq, valC = 0x8f7, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %r8, valC = 0x9, valP = 0x5a, Stat = AOK
+> E: instr = irmovq, valC = 0x8, valA = 0x0, valB = 0x0
+88c88
+< M: instr = irmovq, Cnd = 1, valE = 0x7f6, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0x7, valA = 0x0
+90c90
+< W: instr = irmovq, valE = 0x6f5, valM = 0x0, dstE = %rbp, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0x6, valM = 0x0, dstE = %rbp, dstM = ----, Stat = AOK
+94,95c94,95
+< D: instr = irmovq, rA = ----, rB = %r9, valC = 0xaf9, valP = 0x64, Stat = AOK
+< E: instr = irmovq, valC = 0x9f8, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %r9, valC = 0xa, valP = 0x64, Stat = AOK
+> E: instr = irmovq, valC = 0x9, valA = 0x0, valB = 0x0
+97c97
+< M: instr = irmovq, Cnd = 1, valE = 0x8f7, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0x8, valA = 0x0
+99c99
+< W: instr = irmovq, valE = 0x7f6, valM = 0x0, dstE = %rsi, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0x7, valM = 0x0, dstE = %rsi, dstM = ----, Stat = AOK
+103,104c103,104
+< D: instr = irmovq, rA = ----, rB = %r10, valC = 0xbfa, valP = 0x6e, Stat = AOK
+< E: instr = irmovq, valC = 0xaf9, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %r10, valC = 0xb, valP = 0x6e, Stat = AOK
+> E: instr = irmovq, valC = 0xa, valA = 0x0, valB = 0x0
+106c106
+< M: instr = irmovq, Cnd = 1, valE = 0x9f8, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0x9, valA = 0x0
+108c108
+< W: instr = irmovq, valE = 0x8f7, valM = 0x0, dstE = %rdi, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0x8, valM = 0x0, dstE = %rdi, dstM = ----, Stat = AOK
+112,113c112,113
+< D: instr = irmovq, rA = ----, rB = %r11, valC = 0xcfb, valP = 0x78, Stat = AOK
+< E: instr = irmovq, valC = 0xbfa, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %r11, valC = 0xc, valP = 0x78, Stat = AOK
+> E: instr = irmovq, valC = 0xb, valA = 0x0, valB = 0x0
+115c115
+< M: instr = irmovq, Cnd = 1, valE = 0xaf9, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xa, valA = 0x0
+117c117
+< W: instr = irmovq, valE = 0x9f8, valM = 0x0, dstE = %r8, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0x9, valM = 0x0, dstE = %r8, dstM = ----, Stat = AOK
+121,122c121,122
+< D: instr = irmovq, rA = ----, rB = %r12, valC = 0xdfc, valP = 0x82, Stat = AOK
+< E: instr = irmovq, valC = 0xcfb, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %r12, valC = 0xd, valP = 0x82, Stat = AOK
+> E: instr = irmovq, valC = 0xc, valA = 0x0, valB = 0x0
+124c124
+< M: instr = irmovq, Cnd = 1, valE = 0xbfa, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xb, valA = 0x0
+126c126
+< W: instr = irmovq, valE = 0xaf9, valM = 0x0, dstE = %r9, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xa, valM = 0x0, dstE = %r9, dstM = ----, Stat = AOK
+130,131c130,131
+< D: instr = irmovq, rA = ----, rB = %r13, valC = 0xefd, valP = 0x8c, Stat = AOK
+< E: instr = irmovq, valC = 0xdfc, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %r13, valC = 0xe, valP = 0x8c, Stat = AOK
+> E: instr = irmovq, valC = 0xd, valA = 0x0, valB = 0x0
+133c133
+< M: instr = irmovq, Cnd = 1, valE = 0xcfb, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xc, valA = 0x0
+135c135
+< W: instr = irmovq, valE = 0xbfa, valM = 0x0, dstE = %r10, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xb, valM = 0x0, dstE = %r10, dstM = ----, Stat = AOK
+139,140c139,140
+< D: instr = irmovq, rA = ----, rB = %r14, valC = 0xffe, valP = 0x96, Stat = AOK
+< E: instr = irmovq, valC = 0xefd, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %r14, valC = 0xf, valP = 0x96, Stat = AOK
+> E: instr = irmovq, valC = 0xe, valA = 0x0, valB = 0x0
+142c142
+< M: instr = irmovq, Cnd = 1, valE = 0xdfc, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xd, valA = 0x0
+144c144
+< W: instr = irmovq, valE = 0xcfb, valM = 0x0, dstE = %r11, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xc, valM = 0x0, dstE = %r11, dstM = ----, Stat = AOK
+148,149c148,149
+< D: instr = irmovq, rA = ----, rB = %rax, valC = 0xfffffffffffffff0, valP = 0xa0, Stat = AOK
+< E: instr = irmovq, valC = 0xffe, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %rax, valC = 0xffffffffffffffff, valP = 0xa0, Stat = AOK
+> E: instr = irmovq, valC = 0xf, valA = 0x0, valB = 0x0
+151c151
+< M: instr = irmovq, Cnd = 1, valE = 0xefd, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xe, valA = 0x0
+153c153
+< W: instr = irmovq, valE = 0xdfc, valM = 0x0, dstE = %r12, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xd, valM = 0x0, dstE = %r12, dstM = ----, Stat = AOK
+157,158c157,158
+< D: instr = irmovq, rA = ----, rB = %rcx, valC = 0xfffffffffffffef1, valP = 0xaa, Stat = AOK
+< E: instr = irmovq, valC = 0xfffffffffffffff0, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %rcx, valC = 0xfffffffffffffffe, valP = 0xaa, Stat = AOK
+> E: instr = irmovq, valC = 0xffffffffffffffff, valA = 0x0, valB = 0x0
+160c160
+< M: instr = irmovq, Cnd = 1, valE = 0xffe, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xf, valA = 0x0
+162c162
+< W: instr = irmovq, valE = 0xefd, valM = 0x0, dstE = %r13, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xe, valM = 0x0, dstE = %r13, dstM = ----, Stat = AOK
+166,167c166,167
+< D: instr = irmovq, rA = ----, rB = %rdx, valC = 0xfffffffffffffdf2, valP = 0xb4, Stat = AOK
+< E: instr = irmovq, valC = 0xfffffffffffffef1, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %rdx, valC = 0xfffffffffffffffd, valP = 0xb4, Stat = AOK
+> E: instr = irmovq, valC = 0xfffffffffffffffe, valA = 0x0, valB = 0x0
+169c169
+< M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffff0, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xffffffffffffffff, valA = 0x0
+171c171
+< W: instr = irmovq, valE = 0xffe, valM = 0x0, dstE = %r14, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xf, valM = 0x0, dstE = %r14, dstM = ----, Stat = AOK
+175,176c175,176
+< D: instr = irmovq, rA = ----, rB = %rbx, valC = 0xfffffffffffffcf3, valP = 0xbe, Stat = AOK
+< E: instr = irmovq, valC = 0xfffffffffffffdf2, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %rbx, valC = 0xfffffffffffffffc, valP = 0xbe, Stat = AOK
+> E: instr = irmovq, valC = 0xfffffffffffffffd, valA = 0x0, valB = 0x0
+178c178
+< M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffef1, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffffe, valA = 0x0
+180c180
+< W: instr = irmovq, valE = 0xfffffffffffffff0, valM = 0x0, dstE = %rax, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xffffffffffffffff, valM = 0x0, dstE = %rax, dstM = ----, Stat = AOK
+184,185c184,185
+< D: instr = irmovq, rA = ----, rB = %rsp, valC = 0xfffffffffffffbf4, valP = 0xc8, Stat = AOK
+< E: instr = irmovq, valC = 0xfffffffffffffcf3, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %rsp, valC = 0xfffffffffffffffb, valP = 0xc8, Stat = AOK
+> E: instr = irmovq, valC = 0xfffffffffffffffc, valA = 0x0, valB = 0x0
+187c187
+< M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffdf2, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffffd, valA = 0x0
+189c189
+< W: instr = irmovq, valE = 0xfffffffffffffef1, valM = 0x0, dstE = %rcx, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xfffffffffffffffe, valM = 0x0, dstE = %rcx, dstM = ----, Stat = AOK
+193,194c193,194
+< D: instr = irmovq, rA = ----, rB = %rbp, valC = 0xfffffffffffffaf5, valP = 0xd2, Stat = AOK
+< E: instr = irmovq, valC = 0xfffffffffffffbf4, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %rbp, valC = 0xfffffffffffffffa, valP = 0xd2, Stat = AOK
+> E: instr = irmovq, valC = 0xfffffffffffffffb, valA = 0x0, valB = 0x0
+196c196
+< M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffcf3, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffffc, valA = 0x0
+198c198
+< W: instr = irmovq, valE = 0xfffffffffffffdf2, valM = 0x0, dstE = %rdx, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xfffffffffffffffd, valM = 0x0, dstE = %rdx, dstM = ----, Stat = AOK
+202,203c202,203
+< D: instr = irmovq, rA = ----, rB = %rsi, valC = 0xfffffffffffff9f6, valP = 0xdc, Stat = AOK
+< E: instr = irmovq, valC = 0xfffffffffffffaf5, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %rsi, valC = 0xfffffffffffffff9, valP = 0xdc, Stat = AOK
+> E: instr = irmovq, valC = 0xfffffffffffffffa, valA = 0x0, valB = 0x0
+205c205
+< M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffbf4, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffffb, valA = 0x0
+207c207
+< W: instr = irmovq, valE = 0xfffffffffffffcf3, valM = 0x0, dstE = %rbx, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xfffffffffffffffc, valM = 0x0, dstE = %rbx, dstM = ----, Stat = AOK
+211,212c211,212
+< D: instr = irmovq, rA = ----, rB = %rdi, valC = 0xfffffffffffff8f7, valP = 0xe6, Stat = AOK
+< E: instr = irmovq, valC = 0xfffffffffffff9f6, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %rdi, valC = 0xfffffffffffffff8, valP = 0xe6, Stat = AOK
+> E: instr = irmovq, valC = 0xfffffffffffffff9, valA = 0x0, valB = 0x0
+214c214
+< M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffaf5, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffffa, valA = 0x0
+216c216
+< W: instr = irmovq, valE = 0xfffffffffffffbf4, valM = 0x0, dstE = %rsp, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xfffffffffffffffb, valM = 0x0, dstE = %rsp, dstM = ----, Stat = AOK
+220,221c220,221
+< D: instr = irmovq, rA = ----, rB = %r8, valC = 0xfffffffffffff7f8, valP = 0xf0, Stat = AOK
+< E: instr = irmovq, valC = 0xfffffffffffff8f7, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %r8, valC = 0xfffffffffffffff7, valP = 0xf0, Stat = AOK
+> E: instr = irmovq, valC = 0xfffffffffffffff8, valA = 0x0, valB = 0x0
+223c223
+< M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffff9f6, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffff9, valA = 0x0
+225c225
+< W: instr = irmovq, valE = 0xfffffffffffffaf5, valM = 0x0, dstE = %rbp, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xfffffffffffffffa, valM = 0x0, dstE = %rbp, dstM = ----, Stat = AOK
+229,230c229,230
+< D: instr = irmovq, rA = ----, rB = %r9, valC = 0xfffffffffffff6f9, valP = 0xfa, Stat = AOK
+< E: instr = irmovq, valC = 0xfffffffffffff7f8, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %r9, valC = 0xfffffffffffffff6, valP = 0xfa, Stat = AOK
+> E: instr = irmovq, valC = 0xfffffffffffffff7, valA = 0x0, valB = 0x0
+232c232
+< M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffff8f7, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffff8, valA = 0x0
+234c234
+< W: instr = irmovq, valE = 0xfffffffffffff9f6, valM = 0x0, dstE = %rsi, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xfffffffffffffff9, valM = 0x0, dstE = %rsi, dstM = ----, Stat = AOK
+238,239c238,239
+< D: instr = irmovq, rA = ----, rB = %r10, valC = 0xfffffffffffff5fa, valP = 0x104, Stat = AOK
+< E: instr = irmovq, valC = 0xfffffffffffff6f9, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %r10, valC = 0xfffffffffffffff5, valP = 0x104, Stat = AOK
+> E: instr = irmovq, valC = 0xfffffffffffffff6, valA = 0x0, valB = 0x0
+241c241
+< M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffff7f8, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffff7, valA = 0x0
+243c243
+< W: instr = irmovq, valE = 0xfffffffffffff8f7, valM = 0x0, dstE = %rdi, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xfffffffffffffff8, valM = 0x0, dstE = %rdi, dstM = ----, Stat = AOK
+247,248c247,248
+< D: instr = irmovq, rA = ----, rB = %r11, valC = 0xfffffffffffff4fb, valP = 0x10e, Stat = AOK
+< E: instr = irmovq, valC = 0xfffffffffffff5fa, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %r11, valC = 0xfffffffffffffff4, valP = 0x10e, Stat = AOK
+> E: instr = irmovq, valC = 0xfffffffffffffff5, valA = 0x0, valB = 0x0
+250c250
+< M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffff6f9, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffff6, valA = 0x0
+252c252
+< W: instr = irmovq, valE = 0xfffffffffffff7f8, valM = 0x0, dstE = %r8, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xfffffffffffffff7, valM = 0x0, dstE = %r8, dstM = ----, Stat = AOK
+256,257c256,257
+< D: instr = irmovq, rA = ----, rB = %r12, valC = 0xfffffffffffff3fc, valP = 0x118, Stat = AOK
+< E: instr = irmovq, valC = 0xfffffffffffff4fb, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %r12, valC = 0xfffffffffffffff3, valP = 0x118, Stat = AOK
+> E: instr = irmovq, valC = 0xfffffffffffffff4, valA = 0x0, valB = 0x0
+259c259
+< M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffff5fa, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffff5, valA = 0x0
+261c261
+< W: instr = irmovq, valE = 0xfffffffffffff6f9, valM = 0x0, dstE = %r9, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xfffffffffffffff6, valM = 0x0, dstE = %r9, dstM = ----, Stat = AOK
+265,266c265,266
+< D: instr = irmovq, rA = ----, rB = %r13, valC = 0xfffffffffffff2fd, valP = 0x122, Stat = AOK
+< E: instr = irmovq, valC = 0xfffffffffffff3fc, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %r13, valC = 0xfffffffffffffff2, valP = 0x122, Stat = AOK
+> E: instr = irmovq, valC = 0xfffffffffffffff3, valA = 0x0, valB = 0x0
+268c268
+< M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffff4fb, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffff4, valA = 0x0
+270c270
+< W: instr = irmovq, valE = 0xfffffffffffff5fa, valM = 0x0, dstE = %r10, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xfffffffffffffff5, valM = 0x0, dstE = %r10, dstM = ----, Stat = AOK
+274,275c274,275
+< D: instr = irmovq, rA = ----, rB = %r14, valC = 0xfffffffffffff1fe, valP = 0x12c, Stat = AOK
+< E: instr = irmovq, valC = 0xfffffffffffff2fd, valA = 0x0, valB = 0x0
+---
+> D: instr = irmovq, rA = ----, rB = %r14, valC = 0xfffffffffffffff1, valP = 0x12c, Stat = AOK
+> E: instr = irmovq, valC = 0xfffffffffffffff2, valA = 0x0, valB = 0x0
+277c277
+< M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffff3fc, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffff3, valA = 0x0
+279c279
+< W: instr = irmovq, valE = 0xfffffffffffff4fb, valM = 0x0, dstE = %r11, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xfffffffffffffff4, valM = 0x0, dstE = %r11, dstM = ----, Stat = AOK
+283,284c283,284
+< D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x0, Stat = ADR
+< E: instr = irmovq, valC = 0xfffffffffffff1fe, valA = 0x0, valB = 0x0
+---
+> D: instr = halt, rA = ----, rB = ----, valC = 0x0, valP = 0x12d, Stat = HLT
+> E: instr = irmovq, valC = 0xfffffffffffffff1, valA = 0x0, valB = 0x0
+286c286
+< M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffff2fd, valA = 0x0
+---
+> M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffff2, valA = 0x0
+288c288
+< W: instr = irmovq, valE = 0xfffffffffffff3fc, valM = 0x0, dstE = %r12, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xfffffffffffffff3, valM = 0x0, dstE = %r12, dstM = ----, Stat = AOK
+292,295c292,295
+< D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x0, Stat = ADR
+< E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+<    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = ADR
+< M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffff1fe, valA = 0x0
+---
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x12e, Stat = AOK
+> E: instr = halt, valC = 0x0, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = HLT
+> M: instr = irmovq, Cnd = 1, valE = 0xfffffffffffffff1, valA = 0x0
+297c297
+< W: instr = irmovq, valE = 0xfffffffffffff2fd, valM = 0x0, dstE = %r13, dstM = ----, Stat = AOK
+---
+> W: instr = irmovq, valE = 0xfffffffffffffff2, valM = 0x0, dstE = %r13, dstM = ----, Stat = AOK
+301c301
+< D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x0, Stat = ADR
+---
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x12f, Stat = AOK
+303,306c303,306
+<    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = ADR
+< M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+<    dstE = ----, dstM = ----, Stat = ADR
+< W: instr = irmovq, valE = 0xfffffffffffff1fe, valM = 0x0, dstE = %r14, dstM = ----, Stat = AOK
+---
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = AOK
+> M: instr = halt, Cnd = 1, valE = 0x0, valA = 0x0
+>    dstE = ----, dstM = ----, Stat = HLT
+> W: instr = irmovq, valE = 0xfffffffffffffff1, valM = 0x0, dstE = %r14, dstM = ----, Stat = AOK
+310c310
+< D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x0, Stat = ADR
+---
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x130, Stat = AOK
+312c312
+<    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = ADR
+---
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = AOK
+314,315c314,315
+<    dstE = ----, dstM = ----, Stat = ADR
+< W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = ADR
+---
+>    dstE = ----, dstM = ----, Stat = AOK
+> W: instr = halt, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = HLT
+317c317
+< Status 'ADR', CC Z=1 S=0 O=0
+---
+> Status 'HLT', CC Z=1 S=0 O=0
+320,334c320,334
+< %rax:	0x0000000000000000	0xfffffffffffffff0
+< %rcx:	0x0000000000000000	0xfffffffffffffef1
+< %rdx:	0x0000000000000000	0xfffffffffffffdf2
+< %rbx:	0x0000000000000000	0xfffffffffffffcf3
+< %rsp:	0x0000000000000000	0xfffffffffffffbf4
+< %rbp:	0x0000000000000000	0xfffffffffffffaf5
+< %rsi:	0x0000000000000000	0xfffffffffffff9f6
+< %rdi:	0x0000000000000000	0xfffffffffffff8f7
+< %r8:	0x0000000000000000	0xfffffffffffff7f8
+< %r9:	0x0000000000000000	0xfffffffffffff6f9
+< %r10:	0x0000000000000000	0xfffffffffffff5fa
+< %r11:	0x0000000000000000	0xfffffffffffff4fb
+< %r12:	0x0000000000000000	0xfffffffffffff3fc
+< %r13:	0x0000000000000000	0xfffffffffffff2fd
+< %r14:	0x0000000000000000	0xfffffffffffff1fe
+---
+> %rax:	0x0000000000000000	0xffffffffffffffff
+> %rcx:	0x0000000000000000	0xfffffffffffffffe
+> %rdx:	0x0000000000000000	0xfffffffffffffffd
+> %rbx:	0x0000000000000000	0xfffffffffffffffc
+> %rsp:	0x0000000000000000	0xfffffffffffffffb
+> %rbp:	0x0000000000000000	0xfffffffffffffffa
+> %rsi:	0x0000000000000000	0xfffffffffffffff9
+> %rdi:	0x0000000000000000	0xfffffffffffffff8
+> %r8:	0x0000000000000000	0xfffffffffffffff7
+> %r9:	0x0000000000000000	0xfffffffffffffff6
+> %r10:	0x0000000000000000	0xfffffffffffffff5
+> %r11:	0x0000000000000000	0xfffffffffffffff4
+> %r12:	0x0000000000000000	0xfffffffffffffff3
+> %r13:	0x0000000000000000	0xfffffffffffffff2
+> %r14:	0x0000000000000000	0xfffffffffffffff1

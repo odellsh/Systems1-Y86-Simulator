@@ -1,0 +1,69 @@
+13c13
+< D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x0, Stat = ADR
+---
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x1, Stat = AOK
+22c22
+< D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x0, Stat = ADR
+---
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x2, Stat = AOK
+24c24
+<    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = ADR
+---
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = AOK
+31c31
+< D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x0, Stat = ADR
+---
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x3, Stat = AOK
+33c33
+<    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = ADR
+---
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = AOK
+35c35
+<    dstE = ----, dstM = ----, Stat = ADR
+---
+>    dstE = ----, dstM = ----, Stat = AOK
+40c40
+< D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x0, Stat = ADR
+---
+> D: instr = halt, rA = ----, rB = ----, valC = 0x0, valP = 0x4, Stat = HLT
+42c42
+<    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = ADR
+---
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = AOK
+44,45c44,72
+<    dstE = ----, dstM = ----, Stat = ADR
+< W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = ADR
+---
+>    dstE = ----, dstM = ----, Stat = AOK
+> W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = AOK
+> 
+> Cycle 5. CC=Z=1 S=0 O=0, Stat=AOK
+> F: predPC = 0x5
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x5, Stat = AOK
+> E: instr = halt, valC = 0x0, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = HLT
+> M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+>    dstE = ----, dstM = ----, Stat = AOK
+> W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = AOK
+> 
+> Cycle 6. CC=Z=1 S=0 O=0, Stat=AOK
+> F: predPC = 0x6
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x6, Stat = AOK
+> E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = AOK
+> M: instr = halt, Cnd = 1, valE = 0x0, valA = 0x0
+>    dstE = ----, dstM = ----, Stat = HLT
+> W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = AOK
+> 
+> Cycle 7. CC=Z=1 S=0 O=0, Stat=AOK
+> F: predPC = 0x7
+> D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x7, Stat = AOK
+> E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+>    srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = AOK
+> M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+>    dstE = ----, dstM = ----, Stat = AOK
+> W: instr = halt, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = HLT
+47c74
+< Status 'ADR', CC Z=1 S=0 O=0
+---
+> Status 'HLT', CC Z=1 S=0 O=0

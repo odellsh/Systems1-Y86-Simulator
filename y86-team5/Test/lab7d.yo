@@ -1,0 +1,42 @@
+                            |  
+                            |      /* This input file tests the ANDQ instruction. */ 
+0x000: 30f0feffffffffffffff |      irmovq  0xfffffffffffffffe, %rax
+0x00a: 30f1f1ffffffffffffff |      irmovq  0xfffffffffffffff1,  %rcx
+0x014: 10                   |      nop
+0x015: 10                   |      nop
+0x016: 10                   |      nop
+0x017: 10                   |      nop	 
+0x018: 10                   |      nop
+0x019: 6201                 |      andq  %rax, %rcx          #%rcx = %rcx & %rax  #SF = 1, ZF = 0, OF = 0, %rcx = 0xfffffffffffffff0
+                            | 
+0x01b: 30f00100000000000000 |      irmovq  1, %rax
+0x025: 30f10300000000000000 |      irmovq  3,  %rcx
+0x02f: 10                   |      nop
+0x030: 10                   |      nop
+0x031: 6201                 |      andq  %rax, %rcx          #%rcx = %rcx & %rax  SF = 0, ZF = 0, OF = 0, %rcx = 1  
+                            | 
+0x033: 30f0f000000000000000 |      irmovq  0xf0, %rax
+0x03d: 30f10f00000000000000 |      irmovq  0x0f,  %rcx
+0x047: 10                   |      nop
+0x048: 10                   |      nop
+0x049: 6201                 |      andq  %rax, %rcx          #%rcx = %rcx & %rax SF = 0, ZF = 1, OF = 0, %rcx = 0
+0x04b: 10                   |      nop	
+                            | 
+0x04c: 30f0ffffffffffffff7f |      irmovq  0x7fffffffffffffff, %rax
+0x056: 30f10000000000000080 |      irmovq  0x8000000000000000, %rcx
+0x060: 10                   |      nop
+0x061: 10                   |      nop
+0x062: 6201                 |      andq  %rax, %rcx          #%rcx = %rcx & %rax   SF = 0, ZF = 1, OF = 0, %rcx = 0
+0x064: 10                   |      nop	
+                            | 
+0x065: 30f00000000000000080 |      irmovq  0x8000000000000000, %rax
+0x06f: 30f1ffffffffffffff7f |      irmovq  0x7fffffffffffffff, %rcx
+0x079: 10                   |      nop
+0x07a: 10                   |      nop
+0x07b: 6201                 |      andq  %rax, %rcx          #%rcx = %rcx & %rax  SF = 0, ZF = 1, OF = 0, %rcx = 0
+0x07d: 00                   |      halt
+0x07e: 10                   |      nop
+0x07f: 10                   |      nop
+0x080: 10                   |      nop
+0x081: 10                   |      nop
+0x082: 10                   |      nop

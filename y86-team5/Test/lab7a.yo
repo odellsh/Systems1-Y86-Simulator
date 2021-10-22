@@ -1,0 +1,40 @@
+                            |  
+                            |  /* This input file tests the IRMOVQ instruction. */    
+0x000:                      | 	.pos 0
+0x000: 30f00100000000000000 |      irmovq		$1, %rax
+0x00a: 30f10200000000000000 |      irmovq		$2, %rcx
+0x014: 30f20300000000000000 |      irmovq		$3, %rdx
+0x01e: 30f30400000000000000 |      irmovq		$4, %rbx
+0x028: 30f40500000000000000 |      irmovq		$5, %rsp
+0x032: 30f50600000000000000 |      irmovq		$6, %rbp
+0x03c: 30f60700000000000000 |      irmovq		$7, %rsi
+0x046: 30f70800000000000000 |      irmovq		$8, %rdi
+0x050: 30f80900000000000000 | 	 irmovq		$9,	%r8
+0x05a: 30f90a00000000000000 | 	 irmovq		$10, %r9
+0x064: 30fa0b00000000000000 | 	 irmovq		$11, %r10
+0x06e: 30fb0c00000000000000 | 	 irmovq		$12, %r11
+0x078: 30fc0d00000000000000 | 	 irmovq		$13, %r12
+0x082: 30fd0e00000000000000 | 	 irmovq		$14, %r13
+0x08c: 30fe0f00000000000000 | 	 irmovq		$15, %r14
+                            | 	 
+0x096: 30f0ffffffffffffffff |      irmovq 0xffffffffffffffff, %rax
+0x0a0: 30f1feffffffffffffff |      irmovq 0xfffffffffffffffe, %rcx
+0x0aa: 30f2fdffffffffffffff |      irmovq 0xfffffffffffffffd, %rdx
+0x0b4: 30f3fcffffffffffffff |      irmovq 0xfffffffffffffffc, %rbx
+0x0be: 30f4fbffffffffffffff |      irmovq 0xfffffffffffffffb, %rsp
+0x0c8: 30f5faffffffffffffff |      irmovq 0xfffffffffffffffa, %rbp
+0x0d2: 30f6f9ffffffffffffff |      irmovq 0xfffffffffffffff9, %rsi
+0x0dc: 30f7f8ffffffffffffff |      irmovq 0xfffffffffffffff8, %rdi
+0x0e6: 30f8f7ffffffffffffff |      irmovq 0xfffffffffffffff7, %r8
+0x0f0: 30f9f6ffffffffffffff |      irmovq 0xfffffffffffffff6, %r9
+0x0fa: 30faf5ffffffffffffff |      irmovq 0xfffffffffffffff5, %r10
+0x104: 30fbf4ffffffffffffff |      irmovq 0xfffffffffffffff4, %r11
+0x10e: 30fcf3ffffffffffffff |      irmovq 0xfffffffffffffff3, %r12
+0x118: 30fdf2ffffffffffffff |      irmovq 0xfffffffffffffff2, %r13
+0x122: 30fef1ffffffffffffff |      irmovq 0xfffffffffffffff1, %r14	 
+0x12c: 00                   |      halt
+0x12d: 10                   |      nop
+0x12e: 10                   |      nop
+0x12f: 10                   |      nop
+0x130: 10                   |      nop
+0x131: 10                   |      nop

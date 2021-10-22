@@ -1,0 +1,32 @@
+                            |  
+                            |      /* This input file tests the XORQ instruction. */ 
+0x000: 30f0f0f0f0f0f0f0f0f0 |      irmovq  0xf0f0f0f0f0f0f0f0, %rax
+0x00a: 30f10f0f0f0f0f0f0f0f |      irmovq  0x0f0f0f0f0f0f0f0f,  %rcx
+0x014: 10                   |      nop
+0x015: 10                   |      nop
+0x016: 10                   |      nop
+0x017: 10                   |      nop
+0x018: 10                   |      nop
+0x019: 6301                 |      xorq  %rax, %rcx          #%rcx = %rcx ^ %rax  SF = 1, ZF = 0, OF = 0, %rcx = 0xffffffffffffffff
+0x01b: 10                   |      nop	 
+                            | 
+0x01c: 30f0f0f0f0f0f0f0f0f0 |      irmovq  0xf0f0f0f0f0f0f0f0, %rax
+0x026: 30f1f0f0f0f0f0f0f0f0 |      irmovq  0xf0f0f0f0f0f0f0f0,  %rcx
+0x030: 10                   |      nop
+0x031: 10                   |      nop
+0x032: 6301                 |      xorq  %rax, %rcx          #%rcx = %rcx ^ %rax SF = 0, ZF = 1, OF = 0, %rcx = 0
+0x034: 10                   |      nop	
+                            | 
+0x035: 30f0f000000000000000 |      irmovq  0xf0, %rax
+0x03f: 30f1f100000000000000 |      irmovq  0xf1,  %rcx
+0x049: 10                   |      nop
+0x04a: 10                   |      nop
+0x04b: 6301                 |      xorq  %rax, %rcx          #%rcx = %rcx ^ %rax  SF = 0, ZF = 0, OF = 0, %ecx = 1
+0x04d: 10                   |      nop	
+                            | 
+0x04e: 00                   |      halt
+0x04f: 10                   |      nop
+0x050: 10                   |      nop
+0x051: 10                   |      nop
+0x052: 10                   |      nop
+0x053: 10                   |      nop

@@ -1,0 +1,51 @@
+
+Cycle 0. CC=Z=1 S=0 O=0, Stat=AOK
+F: predPC = 0x0
+D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x0, Stat = BUB
+E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+   srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = BUB
+M: instr = nop, Cnd = 0, valE = 0x0, valA = 0x0
+   dstE = ----, dstM = ----, Stat = BUB
+W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = BUB
+
+Cycle 1. CC=Z=1 S=0 O=0, Stat=AOK
+F: predPC = 0x1
+D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x0, Stat = ADR
+E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+   srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = BUB
+M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+   dstE = ----, dstM = ----, Stat = BUB
+W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = BUB
+
+Cycle 2. CC=Z=1 S=0 O=0, Stat=AOK
+F: predPC = 0x2
+D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x0, Stat = ADR
+E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+   srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = ADR
+M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+   dstE = ----, dstM = ----, Stat = BUB
+W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = BUB
+
+Cycle 3. CC=Z=1 S=0 O=0, Stat=AOK
+F: predPC = 0x3
+D: instr = <bad>, rA = ----, rB = ----, valC = 0x0, valP = 0x3, Stat = INS
+E: instr = nop, valC = 0x0, valA = 0x0, valB = 0x0
+   srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = ADR
+M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+   dstE = ----, dstM = ----, Stat = ADR
+W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = BUB
+
+Cycle 4. CC=Z=1 S=0 O=0, Stat=AOK
+F: predPC = 0x4
+D: instr = nop, rA = ----, rB = ----, valC = 0x0, valP = 0x0, Stat = ADR
+E: instr = <bad>, valC = 0x0, valA = 0x0, valB = 0x0
+   srcA = ----, srcB = ----, dstE = ----, dstM = ----, Stat = INS
+M: instr = nop, Cnd = 1, valE = 0x0, valA = 0x0
+   dstE = ----, dstM = ----, Stat = ADR
+W: instr = nop, valE = 0x0, valM = 0x0, dstE = ----, dstM = ----, Stat = ADR
+Processor State:
+Status 'ADR', CC Z=1 S=0 O=0
+
+Changes to registers:
+
+Changes to memory:

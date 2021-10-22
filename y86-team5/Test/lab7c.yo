@@ -1,0 +1,43 @@
+                            |  
+                            |      /* This input file tests the SUBQ instruction. */
+0x000: 30f0ffffffffffffffff |      irmovq  $-1, %rax
+0x00a: 30f10300000000000000 |      irmovq  3,  %rcx
+0x014: 10                   |      nop
+0x015: 10                   |      nop
+0x016: 10                   |      nop
+0x017: 10                   |      nop
+0x018: 10                   |      nop
+0x019: 6101                 |      subq  %rax, %rcx          #%rcx = %rcx - %rax   SF = 0, ZF = 0, OF = 0, %rcx =  4
+0x01b: 10                   | 	 nop
+0x01c: 30f0ffffffffffffffff |      irmovq  $-1, %rax
+0x026: 30f1fdffffffffffffff |      irmovq  -3,  %rcx
+0x030: 10                   |      nop
+0x031: 10                   |      nop
+0x032: 6101                 |      subq  %rax, %rcx          #%rcx = %rcx - %rax  SF = 1, ZF = 0, OF = 0, %rcx = -2
+0x034: 10                   |      nop	
+0x035: 30f0ffffffffffffffff |      irmovq  $-1, %rax
+0x03f: 30f1ffffffffffffffff |      irmovq  -1,  %rcx
+0x049: 10                   |      nop
+0x04a: 10                   |      nop
+0x04b: 6101                 |      subq  %rax, %rcx          #%rcx = %rcx - %rax  SF = 0, ZF = 1, OF = 0, %rcx = 0
+0x04d: 10                   |      nop
+                            | 
+0x04e: 30f0ffffffffffffff7f |      irmovq  0x7fffffffffffffff, %rax
+0x058: 30f10000000000000080 |      irmovq  0x8000000000000000, %rcx
+0x062: 10                   |      nop
+0x063: 10                   |      nop
+0x064: 6101                 |      subq  %rax, %rcx          #%rcx = %rcx - %rax SF = 0, ZF = 0, OF = 1, %rcx = 1
+0x066: 10                   |      nop	
+                            | 
+0x067: 30f00000000000000080 |      irmovq  0x8000000000000000, %rax
+0x071: 30f1ffffffffffffff7f |      irmovq  0x7fffffffffffffff, %rcx
+0x07b: 10                   |      nop
+0x07c: 10                   |      nop
+0x07d: 6101                 |      subq  %rax, %rcx          #%rcx = %rcx - %rax  #SF = 1, ZF = 0, OF = 1, %rcx = -1
+0x07f: 10                   |      nop	 
+0x080: 00                   |      halt
+0x081: 10                   |      nop
+0x082: 10                   |      nop
+0x083: 10                   |      nop
+0x084: 10                   |      nop
+0x085: 10                   |      nop

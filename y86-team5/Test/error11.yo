@@ -1,0 +1,21 @@
+0x000:                      | 		.pos 0x0
+0x000: 30f40020000000000000 | 		irmovq stack, %rsp
+0x00a: 801400000000000000   | 		call main
+0x013: 00                   | 		halt
+0x014:                      | main:		
+0x014: 30f30010000000000000 | 		irmovq n, %rbx 
+0x01e: 30f1ffffffffffffffff | 		irmovq $-1, %rcx 
+0x028: 50230000000000000000 | loop: 	mrmovq (%rbx), %rdx
+0x032: 6012                 | 		addq %rcx, %rdx 
+0x034: 40230000000000000000 | 		rmmovq %rdx, (%rbx)
+0x03e: 742800000000000000   | 		jne loop 
+0x047: 90                   | 		ret
+0x048:                      | 		.align 8
+0x048: efcdab8967452301     | a:		.quad	0x0123456789abcdef
+0x050: 1032547698badcfe     | b:		.quad	0xfedcba9876543210
+0x1000:                      | 		.pos 0x1000
+0x1000: 0800000000000000     | n: 		.quad 8 ***Error-extra space before data
+0x2000:                      | 		.pos 0x2000
+0x2000:                      | stack:
+                             | 
+                             | 
